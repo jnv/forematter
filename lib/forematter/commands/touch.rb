@@ -37,7 +37,7 @@ module Forematter::Commands
     include Forematter::Arguments::FieldFiles
 
     def run
-      files_with(field).each do |file|
+      files.each do |file|
         file[field] = now
         file.write
       end
