@@ -14,7 +14,7 @@ module Forematter
     def_delegators :meta, :keys, :key?, :has_key?, :[], :[]=, :delete, :rename
 
     def to_s
-      "#{meta.to_yaml}---\n#{content}"
+      "#{meta.to_yaml}---\n\n#{content}"
     end
 
     def write
